@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 240" width="1200" height="240" role="img" aria-label="Mohithash — Sales Engineer, Growth &amp; Performance Marketing">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#12071f"/><stop offset="50%" stop-color="#1b1030"/><stop offset="100%" stop-color="#0a0714"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#a78bfa"/><stop offset="45%" stop-color="#f0abfc"/><stop offset="50%" stop-color="#ffffff"/><stop offset="55%" stop-color="#f0abfc"/><stop offset="100%" stop-color="#7c3aed"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-1 0; 1 0; -1 0" dur="6s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0"/><stop offset="50%" stop-color="#c084fc" stop-opacity=".9"/><stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity=".45"/><stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#a78bfa" stroke-opacity=".06"/></pattern>
+    <clipPath id="clip"><rect width="1200" height="240" rx="16"/></clipPath>
+  </defs>
+  <style>
+    .name{font:800 66px 'Segoe UI',Arial,sans-serif;letter-spacing:4px}
+    .role{font:600 22px 'Segoe UI',Arial,sans-serif;letter-spacing:5px;fill:#c4b5fd}
+    .pip{fill:#c084fc}
+    @keyframes float{0%,100%{transform:translate(-40px,0) scale(1);opacity:.8}50%{transform:translate(40px,8px) scale(1.15);opacity:1}}
+    .aura{animation:float 12s ease-in-out infinite;transform-origin:600px 120px}
+    @keyframes bl{0%,100%{opacity:.25}50%{opacity:1}}
+    .b1{animation:bl 2.4s ease-in-out infinite}.b2{animation:bl 2.4s ease-in-out .8s infinite}.b3{animation:bl 2.4s ease-in-out 1.6s infinite}
+    @media (prefers-reduced-motion:reduce){.aura,.b1,.b2,.b3{animation:none}}
+  </style>
+  <g clip-path="url(#clip)">
+    <rect width="1200" height="240" fill="url(#bg)"/>
+    <rect width="1200" height="240" fill="url(#grid)"/>
+    <ellipse class="aura" cx="600" cy="120" rx="420" ry="150" fill="url(#glow)"/>
+    <text class="name" x="600" y="120" text-anchor="middle" fill="url(#shine)">MOHITHASH</text>
+    <path d="M330 150 H870" stroke="url(#accent)" stroke-width="2"/>
+    <text class="role" x="600" y="185" text-anchor="middle">SALES ENGINEER  ·  GROWTH &amp; PERFORMANCE MARKETING</text>
+    <circle class="pip b1" cx="470" cy="205" r="4"/><circle class="pip b2" cx="600" cy="205" r="4"/><circle class="pip b3" cx="730" cy="205" r="4"/>
+    <rect x="0" y="236" width="1200" height="4" fill="url(#accent)"/>
+  </g>
+</svg>
